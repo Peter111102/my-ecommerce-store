@@ -1,12 +1,12 @@
-# React + Vite
+Descrizione del Progetto
+Questo è un semplice sito e-commerce realizzato per esercitarmi con Vite, React e Tailwind CSS.
+Il progetto include una struttura base per la visualizzazione di prodotti, una gestione semplice della navigazione tramite React Router DOM e uno stile responsive sviluppato con Tailwind CSS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tecnologie Utilizzate
+Vite – Build tool per configurazione e avvio rapido del progetto React.
 
-Currently, two official plugins are available:
+React – Libreria per la creazione di interfacce utente component-based.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tailwind CSS – Framework CSS utility-first per lo sviluppo rapido di UI responsive.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React Router DOM – Libreria per la gestione delle rotte e della navigazione.
