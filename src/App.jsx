@@ -11,23 +11,25 @@ import Catalog from './pages/Catalog'; // la nuova pagina che stiamo creando
 
 function App() {
   return ( 
-  <Router>
-    <div className="min-h-screen flex flex-col">
-      <Navbar /> 
-      <Routes>
-        <Route path="/" element={
-        <>
-          <Hero />
-          <Products />
-        </>
-      } />
-        {/* Puoi aggiungere altre pagine qui */}
-        <Route path="/prodotti/:categoryId" element={<Catalog />} />
-        <Route path="/prodotti" element={<Catalog />} />
-          
-      </Routes>
-    </div>
-  </Router>
+  
+    <Router basename="/my-ecommerce-store">
+      <div className="min-h-screen flex flex-col">
+        <Navbar /> 
+        <Routes>
+          <Route path="/" element={
+          <>
+            <Hero />
+            <Products />
+          </>
+        } />
+          {/* Puoi aggiungere altre pagine qui */}
+          <Route path="/prodotti/:categoryId" element={<Catalog />} />
+          <Route path="/prodotti" element={<Catalog />} />
+            
+        </Routes>
+      </div>
+    </Router>
+  
   );
 }
 
