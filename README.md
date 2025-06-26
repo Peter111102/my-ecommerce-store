@@ -1,4 +1,5 @@
 https://peter111102.github.io/my-ecommerce-store/
+
 Descrizione del Progetto
 Questo è un semplice sito e-commerce realizzato per esercitarmi con Vite, React e Tailwind CSS.
 Il progetto include una struttura base per la visualizzazione di prodotti, una gestione semplice della navigazione tramite React Router DOM e uno stile responsive sviluppato con Tailwind CSS.
