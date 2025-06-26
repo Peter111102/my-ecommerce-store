@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Catalog from './pages/Catalog'; // la nuova pagina che stiamo creando
 
 
+
 function App() {
   return ( 
   
