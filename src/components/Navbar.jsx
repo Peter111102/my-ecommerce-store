@@ -1,9 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 function Navbar() {
   const [categories, setCategories] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
+  const { cartItems } = useCart();
+  const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+
 
   useEffect(() => {
     fetch('https://api.escuelajs.co/api/v1/categories')
@@ -52,7 +56,7 @@ function Navbar() {
         
         <li>
           <Link to="/carrello" className="hover:text-gray-300 mr-8">
-            Carrello
+            Carrello {totalItems}
           </Link>
         </li>
 
