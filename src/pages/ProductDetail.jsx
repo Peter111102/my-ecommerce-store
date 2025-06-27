@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import AddToCartButton from '../components/AddToCartButton'; // Assicurati di avere questo componente
 
 function ProductDetail() {
   const { productId } = useParams();

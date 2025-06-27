@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Catalog from './pages/Catalog'; // la nuova pagina che stiamo creando
 import ProductDetail from './pages/ProductDetail'; // la pagina dei dettagli del prodotto
+import CartPage from './pages/CartPage'; // la pagina del carrello
 
 function App() {
   return ( 
@@ -27,7 +28,7 @@ function App() {
             <Catalog />
           </>
           } />
-
+          <Route path="/carrello" element={<CartPage />} />
         </Routes>
       </div>
     </Router>

@@ -49,7 +49,13 @@ function Navbar() {
         </li>
 
         <li><a href="#" className="hover:text-gray-300 mr-8">Accedi / Registrati</a></li>
-        <li><a href="#" className="hover:text-gray-300">Carrello</a></li>
+        
+        <li>
+          <Link to="/carrello" className="hover:text-gray-300 mr-8">
+            Carrello
+          </Link>
+        </li>
+
       </ul>
     </nav>
   );
