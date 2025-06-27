@@ -25,7 +25,6 @@ function Navbar() {
       />
 
       <ul className="flex items-center list-none relative">
-        {/* CONTENITORE UNICO GESTITO */}
         <li
           className="mr-8 cursor-pointer relative px-4 py-2 h-full flex items-center"
           onMouseEnter={() => setShowDropdown(true)}
@@ -37,7 +36,7 @@ function Navbar() {
 
           {/* Dropdown */}
           {showDropdown && (
-            <ul className="absolute top-10 left-0 bg-white text-black rounded shadow-lg p-2 w-48 z-10">
+            <ul className="absolute top-10 left-0 bg-white text-black rounded shadow-lg p-2 w-40 z-10">
               {categories.map(category => (
                 <li key={category.id} className="p-2 hover:bg-gray-200 rounded">
                   <Link to={`/prodotti/${category.id}`} onClick={() => setShowDropdown(false)}>
